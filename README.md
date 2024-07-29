@@ -1,4 +1,7 @@
 <h1> Greensol Scripts Python </h1>
+
+- `python version required`: python 3.8
+<br>
 For it to work correctly, you need to create the .env file and add the following credentials
 
 ```` .env
