@@ -1,0 +1,12 @@
+pv1_u,PV1 input voltage
+pv2_u,PV2 input voltage
+pv1_i,PV1 input current
+pv2_i,PV2 input current
+ab_u,A-B line voltage of grid
+a_i,Phase A current of grid (IA)
+elec_freq,Grid frequency
+meter_u,Phase A voltage (AC output)
+meter_i,Phase A current of grid (IA)
+grid_frequency,Grid frequency
+battery_soc,Battery SOC
+ch_discharge_power,Charge/Discharge power

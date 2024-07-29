@@ -1,0 +1,12 @@
+pv1_u
+pv2_u
+pv1_i
+pv2_i
+ab_u
+a_i
+elec_freq
+meter_u
+meter_i
+grid_frequency
+battery_soc
+ch_discharge_power

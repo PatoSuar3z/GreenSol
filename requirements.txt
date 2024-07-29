@@ -1,0 +1,5 @@
+pandas
+snowflake-snowpark-python
+python-dotenv
+requests
+numpy
