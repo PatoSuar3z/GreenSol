@@ -30,7 +30,7 @@ def upload_file(file_name):
         with get_snowflake_connection() as session:
             session.use_schema("GREENSOL.STAGING")
             session.sql(f"PUT file://./{file_name} @RECORD_STAGE AUTO_COMPRESS = TRUE OVERWRITE=TRUE").show()
-            session.sql(f"COPY INTO GREENSOL.STAGING.HISTORIA_IGNACIO FROM @GREENSOL.STAGING.RECORD_STAGE/{file_name}.gz FILE_FORMAT = (FORMAT_NAME = GREENSOL.STAGING.CSV_FORMAT)").show()
+            session.sql(f"COPY INTO GREENSOL.STAGING.HISTORIA_VICTRON_IGN FROM @GREENSOL.STAGING.RECORD_STAGE/{file_name}.gz FILE_FORMAT = (FORMAT_NAME = GREENSOL.STAGING.CSV_FORMAT)").show()
     except Exception as e:
         print(f"error {e}")
 
@@ -138,8 +138,8 @@ if __name__ == '__main__':
             print(info)
             file_name = f'{str(idSite)}_{run_formatted}.csv'
             pd.DataFrame(info).to_csv(file_name, index=False, sep=';')
-            #upload_file(file_name)
-            #os.remove(file_name)
+            upload_file(file_name)
+            os.remove(file_name)
             print(pd.DataFrame(info))
     else:
         print('token not found')
