@@ -1,0 +1,23 @@
+IV1,8,VE.Bus System,Input voltage phase 1
+OV1,20,VE.Bus System,Output voltage phase 1
+II1,11,VE.Bus System,Input current phase 1
+IP1,17,VE.Bus System,Input power 1
+IF1,14,VE.Bus System,Input frequency 1
+a1,131,VE.Bus System,AC Consumption L1
+OF,26,VE.Bus System,Output frequency
+V,47,Battery Monitor,Voltage
+bv,143,System overview,Voltage
+I,49,Battery Monitor,Current
+BT,115,Battery Monitor,Battery temperature
+SOC,51,Battery Monitor,State of charge
+bp,243,System overview,Battery Power
+PVP,442,Solar Charger,PV power
+PVV0,695,Solar Charger,PV Voltage on tracker 1
+PVV1,696,Solar Charger,PV Voltage on tracker 2
+PVV2,697,Solar Charger,PV Voltage on tracker 3
+PVV3,698,Solar Charger,PV Voltage on tracker 4
+PVP0,802,Solar Charger,PV power on tracker 1
+PVP1,803,Solar Charger,PV power on tracker 2
+PVP2,804,Solar Charger,PV power on tracker 3
+PVP3,805,Solar Charger,PV power on tracker 4
+ScW,107,Solar Charger,Battery watts
